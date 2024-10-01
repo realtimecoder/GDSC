@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 15px;
+  width: 95vw;
+  height: 95vh;
+}
+
+.section {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.red-section {
+  background-color: #ff9999;
+  grid-column: 1;
+  grid-row: 1/span 2;
+
+  }
+  .red-section p{
+    font-size: larger;
+    color: white;
+    size: 20px;
+    text-align: center;
+    margin-top: 200px;
+    
+  }
+
+.top-section {
+  background-color: #ffe4b5;
+  grid-column: 2;
+  grid-row: 1;
+}
+.top-section p{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+
+  font-family: "Edu QLD Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.middle-section {
+  background-color: #87cefa;
+  grid-column: 2;
+  grid-row: 2 ;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+  color: white;
+}
+.middle-section p{
+  text-align: center;
+  margin-top:100px;
+}
+
+.green-section {
+ background-color: #b3e5c9;
+  grid-column: 1/span 2;
+  grid-row: 3;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  color: black;
+  
+  }
+.green-section p{
+  text-align: center;
+  margin-top:50px;
+ 
+}
+.beige-section {
+  background-color: #f3e5ab;
+  grid-column: 3;
+  grid-row: 3;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.beige-section p{
+  text-align: center;
+  margin-top:50px;
+  font-size: 25px;
+  
+}
+
+
+.purple-section {
+  background-color: #b39ddb;
+  grid-column: 3;
+  grid-row: 1/span 2;
+}
+.purple-section p{
+  color: white;
+  text-align: center;
+  margin-left: 175px;
+  margin-top: 200px;
+}
+
+.name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-weight: 500px;
+  font-style: normal;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+}
+
+
